@@ -1,0 +1,7 @@
+{
+  "name": "Chatbot DIVTEC Porrentruy",
+  "description": "Un chatbot spécialisé sur les formations de la DIVTEC Porrentruy (CEJEF), utilisant une base de connaissances locale.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
