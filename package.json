@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest"
   },
   "dependencies": {
     "@google/genai": "^1.19.0",
@@ -17,8 +18,14 @@
     "recharts": "^2.12.7"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^22.14.0",
     "@types/react": "19.2.2",
-    "typescript": "~5.8.2"
+    "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/ui": "^4.0.2",
+    "jsdom": "^27.0.1",
+    "typescript": "~5.8.2",
+    "vitest": "^4.0.2"
   }
 }
