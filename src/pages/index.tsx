@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { FormEvent } from 'react';
-import ReactDOM from 'react-dom/client';
 //import { GoogleGenAI } from '@google/genai';
 import { KNOWLEDGE_BASE } from '../knowledge';
 import { SendIcon, MicIcon, SpeakerIcon, TrashIcon } from '../components/Icons';
@@ -70,7 +69,6 @@ const searchKnowledgeBase = (query: string): string => {
 };
 
 
-import type { ChatMessage } from '../types';
 
 import { useSpeechServices } from '../hooks/useSpeechServices';
 

@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
 import type { ChatMessage } from '../types';
 
 export const useChat = () => {
