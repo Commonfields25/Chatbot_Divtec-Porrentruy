@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //import { GoogleGenAI } from '@google/genai';
 import { marked } from 'marked';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { KNOWLEDGE_BASE } from '../src/knowledge';
+import { KNOWLEDGE_BASE } from '../knowledge';
 
 
 //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
