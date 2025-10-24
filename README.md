@@ -32,7 +32,7 @@ Cet outil est un chatbot intelligent, spécialisé dans le domaine de la DIVTEC.
 
 ### Prérequis
 
-- **Node.js** : version 18.x ou supérieure
+- **Node.js** : version 20.x ou supérieure
 - **npm** : version 8.x ou supérieure
 
 ### Installation
