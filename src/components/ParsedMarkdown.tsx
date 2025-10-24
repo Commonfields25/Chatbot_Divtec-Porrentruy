@@ -14,7 +14,7 @@ const ParsedMarkdown = ({ content }: ParsedMarkdownProps) => {
         console.error("Markdown parsing error:", error);
         return (
             <div className="markdown-error">
-                <p><strong>Erreur d'affichage du message</strong></p>
+                <p><strong>Erreur d&apos;affichage du message</strong></p>
                 <pre>{content}</pre>
             </div>
         );
