@@ -1,10 +1,10 @@
 // eslint.config.js
-const globals = require("globals");
-const tseslint = require("typescript-eslint");
-const reactPlugin = require("eslint-plugin-react");
-const nextPlugin = require("@next/eslint-plugin-next");
+import globals from "globals";
+import tseslint from "typescript-eslint";
+import reactPlugin from "eslint-plugin-react";
+import nextPlugin from "@next/eslint-plugin-next";
 
-module.exports = tseslint.config(
+export default tseslint.config(
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     languageOptions: {
