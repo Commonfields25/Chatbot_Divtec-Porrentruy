@@ -1,6 +1,14 @@
-// Contient les informations générales sur la DIVTEC, sa structure et les admissions.
+/**
+ * @file Ce fichier contient les informations générales sur la DIVTEC, sa structure et les admissions.
+ * @author Scail-in
+ * @see {@link https://github.com/scail-in/chatbot-divtec-porrentruy}
+ */
 import type { KnowledgeChunk } from './index';
 
+/**
+ * @const {KnowledgeChunk[]}
+ * @description Contient les informations générales sur la DIVTEC, sa structure et les admissions.
+ */
 export const DIVTEC_CHUNKS: KnowledgeChunk[] = [
   {
     id: 'divtec-presentation',

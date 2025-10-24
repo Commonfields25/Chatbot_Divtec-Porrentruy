@@ -1,6 +1,14 @@
-// Contient les informations sur les formations proposées par la DIVTEC.
+/**
+ * @file Ce fichier contient les informations sur les formations proposées par la DIVTEC.
+ * @author Scail-in
+ * @see {@link https://github.com/scail-in/chatbot-divtec-porrentruy}
+ */
 import type { KnowledgeChunk } from './index';
 
+/**
+ * @const {KnowledgeChunk[]}
+ * @description Contient les informations sur les formations proposées par la DIVTEC.
+ */
 export const FORMATIONS_CHUNKS: KnowledgeChunk[] = [
   {
     id: 'formation-cfc-general',
