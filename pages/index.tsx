@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //import { GoogleGenAI } from '@google/genai';
 import { marked } from 'marked';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { KNOWLEDGE_BASE } from '../knowledge';
+import { KNOWLEDGE_BASE } from '../src/knowledge';
 
 
 //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
@@ -284,9 +284,9 @@ const DivtecChatbot = () => {
         if (!isSpeechEnabled || !textToSpeak.trim()) return;
         
         const cleanedText = cleanupTextForSpeech(textToSpeak);
-        const sentences = cleanedText.match(/[^.!?]+[.!?]*/g) || [];
+        const sentences: string[] = cleanedText.match(/[^.!?]+[.!?]*/g) || [];
         
-        sentences.forEach(s => {
+        sentences.forEach((s: string) => {
             if(s.trim()) speechQueueRef.current.push(s.trim());
         });
 
