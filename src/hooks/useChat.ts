@@ -53,7 +53,16 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
             speak(modelText);
 
         } catch (err) {
-            const errorMessage = err instanceof Error ? err.message : "Une erreur inconnue est survenue.";
+            let errorMessage = "Une erreur inconnue est survenue.";
+            if (err instanceof Error) {
+                if (err.message.includes('HTTP 404')) {
+                    errorMessage = "L'API de chat est introuvable. Veuillez vérifier la configuration.";
+                } else if (err.message.startsWith('HTTP')) {
+                    errorMessage = `Erreur de communication avec le serveur (${err.message}).`;
+                } else {
+                    errorMessage = err.message;
+                }
+            }
             setError(`Désolé, une erreur est survenue : ${errorMessage}`);
             setMessages(prev => {
                 const newMessages = [...prev];

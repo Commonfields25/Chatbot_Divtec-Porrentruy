@@ -12,6 +12,7 @@ Ce projet est construit avec **Next.js** et sert d'interface utilisateur pour un
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Lancement](#lancement)
+- [Scripts Disponibles](#scripts-disponibles)
 - [Architecture](#architecture)
 - [Contribuer](#contribuer)
 
@@ -31,7 +32,7 @@ Cet outil est un chatbot intelligent, spécialisé dans le domaine de la DIVTEC.
 
 ### Prérequis
 
-- **Node.js** : version 18.x ou supérieure
+- **Node.js** : version 20.x ou supérieure
 - **npm** : version 8.x ou supérieure
 
 ### Installation
@@ -71,6 +72,35 @@ Cette URL est utilisée côté serveur par le BFF de Next.js et n'est jamais exp
     npm run build
     npm run start
     ```
+
+### Scripts Disponibles
+
+Dans le répertoire du projet, vous pouvez exécuter :
+
+#### `npm run dev`
+
+Exécute l'application en mode développement.\
+Ouvrez [http://localhost:3000](http://localhost:3000) pour la voir dans le navigateur.
+
+La page se rechargera si vous faites des modifications.\
+Vous verrez également les erreurs de lint dans la console.
+
+#### `npm test`
+
+Lance le test runner en mode interactif.
+
+#### `npm run build`
+
+Construit l'application pour la production dans le dossier `.next`.\
+Il regroupe correctement React en mode production et optimise la construction pour les meilleures performances.
+
+#### `npm run start`
+
+Démarre le serveur de production.
+
+#### `npm run lint`
+
+Exécute le linter.
 
 ### Architecture
 

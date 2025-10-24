@@ -1,17 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { FormEvent } from 'react';
 import Image from 'next/image';
-//import { GoogleGenAI } from '@google/genai';
 import { KNOWLEDGE_BASE } from '../knowledge';
 import { SendIcon, MicIcon, SpeakerIcon, TrashIcon } from '../components/Icons';
 import TypingIndicator from '../components/TypingIndicator';
 import DataFlowChart from '../components/DataFlowChart';
 import ParsedMarkdown from '../components/ParsedMarkdown';
-
-
-//const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
-
-
 
 // Helper to normalize text for searching (lowercase, remove accents)
 const normalizeText = (text: string): string => {
@@ -189,7 +183,8 @@ const DivtecChatbot = () => {
                 ))}
                 <div ref={messagesEndRef} />
             </div>
-            {(chatError || speechError) && <div className="error">{chatError || speechError}</div>}
+            {chatError && <div className="error">{chatError}</div>}
+            {speechError && <div className="error">{speechError}</div>}
             <form onSubmit={handleSubmit} className="form">
                 <input
                     type="text"

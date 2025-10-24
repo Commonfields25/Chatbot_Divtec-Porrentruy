@@ -60,6 +60,10 @@ export const useSpeechServices = () => {
                 isSpeakingRef.current = false;
                 processSpeechQueue();
             };
+            utterance.onerror = (event) => {
+                setError(`Erreur de synthèse vocale : ${event.error}`);
+                isSpeakingRef.current = false;
+            };
             speechSynthesis.speak(utterance);
         } else {
              isSpeakingRef.current = false;
