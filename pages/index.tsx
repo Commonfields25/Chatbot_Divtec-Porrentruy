@@ -8,7 +8,6 @@ import { KNOWLEDGE_BASE } from '../src/knowledge';
 
 
 //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
-const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || 'http://localhost:5678/webhook/chat';
 
 // --- SVG Icons ---
 const SendIcon = () => (
