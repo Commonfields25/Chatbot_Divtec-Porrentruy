@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { FormEvent } from 'react';
+import Image from 'next/image';
 //import { GoogleGenAI } from '@google/genai';
 import { KNOWLEDGE_BASE } from '../knowledge';
 import { SendIcon, MicIcon, SpeakerIcon, TrashIcon } from '../components/Icons';
@@ -133,7 +134,7 @@ const DivtecChatbot = () => {
         <div className="container">
             <header className="header">
                  <div className="header-content">
-                    <img src="https://newtec.divtec.ch/storage/2024/09/logo-Newtec-3-2.png" alt="Logo DIVTEC Newtec" className="logo" />
+                    <Image src="https://newtec.divtec.ch/storage/2024/09/logo-Newtec-3-2.png" alt="Logo DIVTEC Newtec" className="logo" width={150} height={50} />
                     <div>
                         <h1 className="title">Assistant DIVTEC</h1>
                         <p className="subtitle">Pôle de formation technique, CEJEF</p>
