@@ -72,8 +72,6 @@ N8N_WEBHOOK_URL=VOTRE_URL_WEBHOOK_N8N
 
 ### Aperçu
 
-![Aperçu du chatbot](https://user-images.githubusercontent.com/11363391/182069688-033618a8-4448-44f2-984f-e218b958f35e.png)
-
 ### Contribuer
 
 Les contributions sont les bienvenues ! Pour toute suggestion ou amélioration, veuillez ouvrir une *issue* ou soumettre une *pull request*.
