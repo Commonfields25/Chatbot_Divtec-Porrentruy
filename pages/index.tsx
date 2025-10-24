@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //import { GoogleGenAI } from '@google/genai';
 import { marked } from 'marked';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { KNOWLEDGE_BASE } from './knowledge';
+import { KNOWLEDGE_BASE } from '../knowledge';
 
 
 //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
@@ -103,6 +103,8 @@ const ParsedMarkdown = ({ content }: { content: string }) => {
         );
     }
 };
+
+
 
 // Helper to normalize text for searching (lowercase, remove accents)
 const normalizeText = (text: string): string => {
@@ -318,7 +320,7 @@ INFORMATIONS PERTINENTES:
 ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour cette question."}
 ---`;
 
-            const res = await fetch(N8N_WEBHOOK_URL, {
+            const res = await fetch('/api/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -480,12 +482,4 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
     );
 };
 
-const rootEl = document.getElementById('root');
-if (rootEl) {
-    const root = ReactDOM.createRoot(rootEl);
-    root.render(
-      <React.StrictMode>
-        <DivtecChatbot />
-      </React.StrictMode>
-    );
-}
+export default DivtecChatbot;
