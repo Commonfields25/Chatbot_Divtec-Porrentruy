@@ -1,6 +1,14 @@
-// Contient les informations sur l'Espace New Tec, le pôle d'innovation de la DIVTEC.
+/**
+ * @file Ce fichier contient les informations sur l'Espace New Tec, le pôle d'innovation de la DIVTEC.
+ * @author Scail-in
+ * @see {@link https://github.com/scail-in/chatbot-divtec-porrentruy}
+ */
 import type { KnowledgeChunk } from './index';
 
+/**
+ * @const {KnowledgeChunk[]}
+ * @description Contient les informations sur l'Espace New Tec, le pôle d'innovation de la DIVTEC.
+ */
 export const NEWTEC_CHUNKS: KnowledgeChunk[] = [
   {
     id: 'newtec-mission',
