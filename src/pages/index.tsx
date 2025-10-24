@@ -183,7 +183,8 @@ const DivtecChatbot = () => {
                 ))}
                 <div ref={messagesEndRef} />
             </div>
-            {(chatError || speechError) && <div className="error">{chatError || speechError}</div>}
+            {chatError && <div className="error">{chatError}</div>}
+            {speechError && <div className="error">{speechError}</div>}
             <form onSubmit={handleSubmit} className="form">
                 <input
                     type="text"
