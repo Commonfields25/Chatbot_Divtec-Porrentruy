@@ -1,4 +1,4 @@
-import type { KnowledgeChunk } from './index';
+import type { KnowledgeChunk } from '../types';
 
 export const FORMATIONS_CHUNKS: KnowledgeChunk[] = [
   {

@@ -2,12 +2,7 @@ import { DIVTEC_CHUNKS } from './divtec';
 import { FORMATIONS_CHUNKS } from './formations';
 import { NEWTEC_CHUNKS } from './newtec';
 
-export interface KnowledgeChunk {
-  id: string;
-  title: string;
-  content: string;
-  keywords: string[];
-}
+import type { KnowledgeChunk } from '../types';
 
 export const KNOWLEDGE_BASE: KnowledgeChunk[] = [
   ...DIVTEC_CHUNKS,
