@@ -11,45 +11,18 @@ import { KNOWLEDGE_BASE } from './knowledge';
 const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || 'http://localhost:5678/webhook/chat';
 
 // --- SVG Icons ---
-
-/**
- * @typedef {object} SendIconProps
- */
-
-/**
- * Affiche une icône d'envoi.
- * @returns {JSX.Element}
- */
 const SendIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
     </svg>
 );
 
-/**
- * @typedef {object} MicIconProps
- */
-
-/**
- * Affiche une icône de microphone.
- * @returns {JSX.Element}
- */
 const MicIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z" fill="currentColor"/>
     </svg>
 );
 
-/**
- * @typedef {object} SpeakerIconProps
- * @property {boolean} active - Indique si le haut-parleur est actif.
- */
-
-/**
- * Affiche une icône de haut-parleur.
- * @param {SpeakerIconProps} props - Les propriétés du composant.
- * @returns {JSX.Element}
- */
 const SpeakerIcon = ({ active }: { active: boolean }) => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" fill="currentColor"/>
@@ -57,14 +30,6 @@ const SpeakerIcon = ({ active }: { active: boolean }) => (
     </svg>
 );
 
-/**
- * @typedef {object} TrashIconProps
- */
-
-/**
- * Affiche une icône de corbeille.
- * @returns {JSX.Element}
- */
 const TrashIcon = () => (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
@@ -72,15 +37,6 @@ const TrashIcon = () => (
 );
 
 // --- Typing Indicator ---
-
-/**
- * @typedef {object} TypingIndicatorProps
- */
-
-/**
- * Affiche un indicateur de saisie.
- * @returns {JSX.Element}
- */
 const TypingIndicator = () => (
     <div className="typing-indicator">
         <span></span>
@@ -114,14 +70,6 @@ const dataFlowData = [
     { time: '10:20', 'Appareil A': 189, 'Appareil B': 480, 'Appareil C': 380 },
 ];
 
-/**
- * @typedef {object} DataFlowChartProps
- */
-
-/**
- * Affiche un graphique de flux de données.
- * @returns {JSX.Element}
- */
 const DataFlowChart = () => (
     <div className="chart-container">
         <ResponsiveContainer width="100%" height={300}>
@@ -140,17 +88,6 @@ const DataFlowChart = () => (
 );
 
 // --- ParsedMarkdown Component ---
-
-/**
- * @typedef {object} ParsedMarkdownProps
- * @property {string} content - Le contenu Markdown à analyser.
- */
-
-/**
- * Analyse et affiche le contenu Markdown.
- * @param {ParsedMarkdownProps} props - Les propriétés du composant.
- * @returns {JSX.Element|null}
- */
 const ParsedMarkdown = ({ content }: { content: string }) => {
     try {
         if (!content) return null;
@@ -167,11 +104,7 @@ const ParsedMarkdown = ({ content }: { content: string }) => {
     }
 };
 
-/**
- * Normalise un texte pour la recherche (minuscules, suppression des accents).
- * @param {string} text - Le texte à normaliser.
- * @returns {string} Le texte normalisé.
- */
+// Helper to normalize text for searching (lowercase, remove accents)
 const normalizeText = (text: string): string => {
     return text
         .toLowerCase()
@@ -179,11 +112,7 @@ const normalizeText = (text: string): string => {
         .replace(/[\u0300-\u036f]/g, "");
 };
 
-/**
- * Recherche dans la base de connaissances.
- * @param {string} query - La requête de recherche.
- * @returns {string} Les morceaux de connaissances pertinents.
- */
+// --- Knowledge Base Search ---
 const searchKnowledgeBase = (query: string): string => {
     const normalizedQuery = normalizeText(query);
     const queryWords = normalizedQuery.match(/\b(\w{3,})\b/g) || [];
@@ -233,15 +162,6 @@ const searchKnowledgeBase = (query: string): string => {
 
 
 // --- Main Chatbot Component ---
-
-/**
- * @typedef {object} DivtecChatbotProps
- */
-
-/**
- * Le composant principal du chatbot.
- * @returns {JSX.Element}
- */
 const DivtecChatbot = () => {
     const [messages, setMessages] = useState<{ role: 'user' | 'model'; text: string }[]>([
         { role: 'model', text: 'Bonjour ! Comment puis-je vous aider concernant la DIVTEC ?' }
