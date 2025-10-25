@@ -1,4 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { z } from 'zod';
+
+const requestSchema = z.object({
+  prompt: z.string().min(1, { message: "Prompt is required" }),
+  system: z.string().optional(),
+});
 
 export default async function handler(
   req: NextApiRequest,
@@ -9,11 +15,13 @@ export default async function handler(
     return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 
-  const { prompt } = req.body;
+  const parseResult = requestSchema.safeParse(req.body);
 
-  if (!prompt) {
-    return res.status(400).json({ error: 'Prompt is required' });
+  if (!parseResult.success) {
+    return res.status(400).json({ error: parseResult.error.issues });
   }
+
+  const { prompt, system } = parseResult.data;
 
   const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
 
