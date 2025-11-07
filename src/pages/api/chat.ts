@@ -9,7 +9,7 @@ export default async function handler(
     return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 
-  const { prompt } = req.body;
+  const { prompt, userId } = req.body;
 
   if (!prompt) {
     return res.status(400).json({ error: 'Prompt is required' });
@@ -28,7 +28,7 @@ export default async function handler(
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({ prompt, userId }),
     });
 
     if (!response.ok) {
