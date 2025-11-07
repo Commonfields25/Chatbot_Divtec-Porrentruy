@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="error-container">
         <h1>Erreur de configuration</h1>
         <p>{error}</p>
-        <p>Veuillez vérifier que les variables d'environnement Supabase sont correctement configurées dans votre fichier <code>.env.local</code>.</p>
+        <p>Veuillez vérifier que les variables d&apos;environnement Supabase sont correctement configurées dans votre fichier <code>.env.local</code>.</p>
       </div>
     );
   }

@@ -1,4 +1,4 @@
-import { createContext, useContext, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode } from 'react';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 const SupabaseContext = createContext<SupabaseClient | undefined>(undefined);
