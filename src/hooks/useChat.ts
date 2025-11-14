@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { ChatMessage } from '../types';
 
 export const useChat = () => {
@@ -7,26 +7,10 @@ export const useChat = () => {
     ]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [sessionId, setSessionId] = useState<string | null>(null);
 
-    // Étape 1 : générer ou récupérer une clé de session persistante (localStorage)
-    useEffect(() => {
-        let id = localStorage.getItem('sessionId');
-        if (!id) {
-            id = crypto.randomUUID();
-            localStorage.setItem('sessionId', id);
-        }
-        setSessionId(id);
-    }, []);
-
-    // ⚡ Étape 2 : fonction d’envoi d’un message
-    const handleSubmit = async (
-        query: string,
-        searchKnowledgeBase: (query: string) => string,
-        speak: (text: string) => void
-    ) => {
+    const handleSubmit = async (query: string, searchKnowledgeBase: (query: string) => string, speak: (text: string) => void) => {
         const currentQuery = query.trim();
-        if (!currentQuery || loading || !sessionId) return;
+        if (!currentQuery || loading) return;
 
         const userMessage: ChatMessage = { role: 'user', text: currentQuery };
         setMessages(prev => [...prev, userMessage, { role: 'model', text: '' }]);
@@ -41,14 +25,14 @@ INFORMATIONS PERTINENTES:
 ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour cette question."}
 ---`;
 
-            //  Étape 3 : on envoie aussi le sessionId à ton API Next.js
             const res = await fetch('/api/chat', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                },
                 body: JSON.stringify({
                     prompt: currentQuery,
                     system: systemInstruction,
-                    sessionId, //  on envoie la clé de session ici
                 }),
             });
 
@@ -67,6 +51,7 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
             });
 
             speak(modelText);
+
         } catch (err) {
             let errorMessage = "Une erreur inconnue est survenue.";
             if (err instanceof Error) {
@@ -89,14 +74,8 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
         }
     };
 
-    //  Étape 4 : réinitialiser le chat (si tu veux une nouvelle session)
-    const clearChat = (resetSession = false) => {
+    const clearChat = () => {
         setMessages([{ role: 'model', text: 'Bonjour ! Comment puis-je vous aider concernant la DIVTEC ?' }]);
-        if (resetSession) {
-            const newId = crypto.randomUUID();
-            localStorage.setItem('sessionId', newId);
-            setSessionId(newId);
-        }
     };
 
     return {
@@ -105,6 +84,5 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
         error,
         handleSubmit,
         clearChat,
-        sessionId, // exposé au besoin
     };
 };
