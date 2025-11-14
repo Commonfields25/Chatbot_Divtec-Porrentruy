@@ -12,6 +12,9 @@
 
 import React, { ReactNode } from 'react';
 import { renderHook, act } from '@testing-library/react';
+// src/hooks/__tests__/useChat.test.tsx
+import React, { ReactNode } from 'react';
+import { renderHook, act, waitFor } from '@testing-library/react';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { SupabaseProvider } from '../../contexts/SupabaseContext';
 import { useChat } from '../useChat';
@@ -29,6 +32,7 @@ import { vi } from 'vitest';
  *
  * @returns {SupabaseClient} Un objet simulant le client Supabase.
  */
+// 1. Créer un client Supabase simulé
 const createSupabaseMock = () => ({
   auth: {
     getSession: vi.fn().mockResolvedValue({ data: { session: { user: { id: 'test-user-id' } } } }),
@@ -48,6 +52,7 @@ const createSupabaseMock = () => ({
  * @param {SupabaseClient} supabaseClient - Le client Supabase simulé.
  * @returns {Function} Un composant React servant de wrapper.
  */
+// 2. Créer un "wrapper" qui fournit le contexte
 const createWrapper = (supabaseClient: SupabaseClient) => {
   return ({ children }: { children: ReactNode }) => (
     <SupabaseProvider value={supabaseClient}>
@@ -64,6 +69,11 @@ global.fetch = vi.fn();
 describe('useChat Hook', () => {
 
   // Réinitialise toutes les simulations avant chaque test pour garantir l'isolation.
+// Mock global pour fetch
+global.fetch = vi.fn();
+
+describe('useChat', () => {
+
   beforeEach(() => {
     vi.clearAllMocks();
   });
@@ -73,6 +83,7 @@ describe('useChat Hook', () => {
    * Scénario : Quand le chat est initialisé, il doit contenir un message de bienvenue.
    */
   it('devrait s\'initialiser avec un message de bienvenue', () => {
+  it('should initialize with a welcome message', () => {
     const supabaseMock = createSupabaseMock();
     const wrapper = createWrapper(supabaseMock);
     const { result } = renderHook(() => useChat(), { wrapper });
@@ -86,6 +97,7 @@ describe('useChat Hook', () => {
    * Scénario : Un utilisateur envoie un message et reçoit une réponse réussie de l'API.
    */
   it('devrait envoyer un message et recevoir une réponse avec succès', async () => {
+  it('should send a message and receive a successful response', async () => {
     const supabaseMock = createSupabaseMock();
     const wrapper = createWrapper(supabaseMock);
     const { result } = renderHook(() => useChat(), { wrapper });
@@ -104,6 +116,8 @@ describe('useChat Hook', () => {
     // Vérifier que l'état du chat a été mis à jour correctement.
     expect(result.current.loading).toBe(false);
     expect(result.current.messages).toHaveLength(3); // Bienvenue + User + Réponse
+    expect(result.current.loading).toBe(false);
+    expect(result.current.messages).toHaveLength(3);
     expect(result.current.messages[2].text).toBe('Voici votre réponse.');
     expect(result.current.error).toBeNull();
   });
@@ -113,6 +127,7 @@ describe('useChat Hook', () => {
    * Scénario : L'appel à l'API échoue, et le hook doit gérer l'erreur proprement.
    */
   it('devrait gérer une erreur réseau correctement', async () => {
+  it('should handle a network error gracefully', async () => {
     const supabaseMock = createSupabaseMock();
     const wrapper = createWrapper(supabaseMock);
     const { result } = renderHook(() => useChat(), { wrapper });
@@ -121,6 +136,9 @@ describe('useChat Hook', () => {
     (fetch as vi.Mock).mockRejectedValue(new Error('Network error'));
 
     // Simuler l'envoi d'un message qui va échouer.
+    // Configurer le mock fetch pour simuler une erreur réseau
+    (fetch as vi.Mock).mockRejectedValue(new Error('Network error'));
+
     await act(async () => {
       await result.current.handleSubmit('Question qui va échouer', () => '', () => {});
     });

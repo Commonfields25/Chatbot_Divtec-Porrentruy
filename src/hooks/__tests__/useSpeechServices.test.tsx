@@ -10,6 +10,7 @@
  * pour vérifier que notre hook les appelle correctement.
  */
 
+// src/hooks/__tests__/useSpeechServices.test.tsx
 import { renderHook, act } from '@testing-library/react';
 import { useSpeechServices } from '../useSpeechServices';
 import { vi } from 'vitest';
@@ -17,6 +18,7 @@ import { vi } from 'vitest';
 // --- Section de Simulation (Mocks) des API Web Speech ---
 
 // Simule l'API de synthèse vocale du navigateur.
+// Simuler les API Web Speech
 const mockSpeechSynthesis = {
   speak: vi.fn(),
   cancel: vi.fn(),
@@ -41,6 +43,12 @@ global.SpeechSynthesisUtterance = vi.fn();
 describe('useSpeechServices Hook', () => {
 
   // Réinitialise les mocks avant chaque test.
+const mockSpeechRecognition = vi.fn(() => ({ start: vi.fn(), stop: vi.fn() }));
+Object.defineProperty(window, 'speechSynthesis', { value: mockSpeechSynthesis, writable: true });
+Object.defineProperty(window, 'webkitSpeechRecognition', { value: mockSpeechRecognition, writable: true });
+global.SpeechSynthesisUtterance = vi.fn();
+
+describe('useSpeechServices', () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
@@ -57,6 +65,14 @@ describe('useSpeechServices Hook', () => {
       // On active d'abord la synthèse vocale.
       result.current.toggleSpeech();
       // On efface les appels de mock précédents pour isoler le test de `speak`.
+  // Test de la logique de nettoyage via la fonction `speak`
+  it('should clean markdown and HTML from text before speaking', () => {
+    const { result } = renderHook(() => useSpeechServices());
+
+    act(() => {
+      // Activer d'abord la synthèse vocale (sans vérifier son output ici)
+      result.current.toggleSpeech();
+      // Vider les appels précédents pour isoler le test de `speak`
       (SpeechSynthesisUtterance as vi.Mock).mockClear();
     });
 
@@ -77,6 +93,17 @@ describe('useSpeechServices Hook', () => {
     const { result } = renderHook(() => useSpeechServices());
 
     // 1. Activer
+      result.current.speak('## Titre **gras** `code` <p>html</p>');
+    });
+
+    // Maintenant, vérifier le bon appel
+    expect(SpeechSynthesisUtterance).toHaveBeenCalledWith('Titre gras code html');
+  });
+
+  it('should toggle speech on and off', () => {
+    const { result } = renderHook(() => useSpeechServices());
+
+    // Activer
     act(() => {
       result.current.toggleSpeech();
     });
@@ -85,6 +112,9 @@ describe('useSpeechServices Hook', () => {
     expect(SpeechSynthesisUtterance).toHaveBeenCalledWith('Synthèse vocale activée.');
 
     // 2. Désactiver
+    expect(SpeechSynthesisUtterance).toHaveBeenCalledWith('Synthèse vocale activée.');
+
+    // Désactiver
     act(() => {
       result.current.toggleSpeech();
     });
@@ -100,6 +130,11 @@ describe('useSpeechServices Hook', () => {
    */
   it('ne devrait pas démarrer l\'écoute si la reconnaissance vocale n\'est pas supportée', () => {
     // On cache temporairement l'API de reconnaissance vocale.
+    expect(mockSpeechSynthesis.cancel).toHaveBeenCalled();
+  });
+
+  it('should not start listening if recognition is not supported', () => {
+    // Cacher temporairement l'API de reconnaissance
     const originalRecognition = window.webkitSpeechRecognition;
     Object.defineProperty(window, 'webkitSpeechRecognition', { value: undefined, writable: true });
 
@@ -114,6 +149,10 @@ describe('useSpeechServices Hook', () => {
     expect(result.current.error).toBe("La reconnaissance vocale n'est pas supportée sur ce navigateur.");
 
     // Restaurer l'API pour ne pas affecter les autres tests.
+    expect(result.current.isListening).toBe(false);
+    expect(result.current.error).toBe("La reconnaissance vocale n'est pas supportée sur ce navigateur.");
+
+    // Restaurer l'API pour les autres tests
     Object.defineProperty(window, 'webkitSpeechRecognition', { value: originalRecognition, writable: true });
   });
 });
