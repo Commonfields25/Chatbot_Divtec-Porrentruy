@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import type { ChatMessage } from '../types';
+import { useSupabase } from '../contexts/SupabaseContext';
 
 export const useChat = () => {
+    const supabase = useSupabase();
     const [messages, setMessages] = useState<ChatMessage[]>([
         { role: 'model', text: 'Bonjour ! Comment puis-je vous aider concernant la DIVTEC ?' }
     ]);
@@ -18,6 +20,9 @@ export const useChat = () => {
         setError(null);
 
         try {
+            const { data: { session } } = await supabase.auth.getSession();
+            const userId = session?.user?.id;
+
             const relevantKnowledge = searchKnowledgeBase(currentQuery);
             const systemInstruction = `Tu es un assistant virtuel pour la DIVTEC, ... (ton prompt actuel) ...
 INFORMATIONS PERTINENTES:
@@ -33,6 +38,7 @@ ${relevantKnowledge || "Aucune information pertinente n'a été trouvée pour ce
                 body: JSON.stringify({
                     prompt: currentQuery,
                     system: systemInstruction,
+                    userId: userId,
                 }),
             });
 
