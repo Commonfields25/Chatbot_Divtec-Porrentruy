@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import type { FormEvent } from 'react';
 import Image from 'next/image';
 import { KNOWLEDGE_BASE } from '../knowledge';
-import { SendIcon, MicIcon, SpeakerIcon, TrashIcon } from '../components/Icons';
+// Correction de l'importation des icônes
+import { Send as SendIcon, Mic as MicIcon, Speaker as SpeakerIcon, Trash as TrashIcon } from '../components/Icons';
 import TypingIndicator from '../components/TypingIndicator';
 import DataFlowChart from '../components/DataFlowChart';
 import ParsedMarkdown from '../components/ParsedMarkdown';
