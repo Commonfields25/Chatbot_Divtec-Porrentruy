@@ -1,0 +1,601 @@
+[
+  {
+    "id": "divtec-presentation",
+    "title": "Présentation de la DIVTEC",
+    "content": "La **DIVTEC** (Division Technique) est le pôle de formation technique du **CEJEF** (Centre jurassien d'enseignement et de formation). C'est le centre de référence pour les métiers de l'industrie et de la technique dans le canton du Jura, en Suisse. L'école est reconnue pour sa **formation duale** et ses liens étroits avec les entreprises de l'Arc jurassien.",
+    "keywords": [
+      "divtec",
+      "cejef",
+      "présentation",
+      "général",
+      "formation duale",
+      "jura",
+      "suisse"
+    ]
+  },
+  {
+    "id": "divtec-poles",
+    "title": "Pôles de Formation de la DIVTEC",
+    "content": "La DIVTEC est organisée sur deux sites principaux, chacun avec ses spécialisations :\n- **Pôle de Porrentruy :**\n  - **Domaines :** Industrie, mécanique, microtechnique, innovation.\n  - **Spécificité :** Accueille l'**Espace New Tec**, le pôle d'innovation.\n- **Pôle de Delémont :**\n  - **Domaines :** Métiers du bâtiment, informatique (gestion et systèmes).",
+    "keywords": [
+      "pôles",
+      "sites",
+      "porrentruy",
+      "delémont",
+      "spécialisations",
+      "domaines",
+      "newtec",
+      "informatique"
+    ]
+  },
+  {
+    "id": "divtec-admission",
+    "title": "Admission et Contact à la DIVTEC",
+    "content": "- **Processus d'admission :** Varie selon la formation.\n  - **CFC :** Nécessite un contrat d'apprentissage avec une entreprise.\n  - **ES (École Supérieure) :** Admission sur dossier et entretien.\n- **Séances d'information :** Des séances sont organisées régulièrement pour les futurs étudiants.\n- **Contact :** Pour des informations détaillées, il est recommandé de contacter directement le secrétariat du pôle de formation concerné.",
+    "keywords": [
+      "admission",
+      "contact",
+      "inscription",
+      "cfc",
+      "es",
+      "contrat apprentissage",
+      "séance information",
+      "secrétariat"
+    ]
+  },
+  {
+    "id": "info-adresse-porrentruy",
+    "title": "Adresse de la Division Technique à Porrentruy",
+    "content": "L'adresse principale de la Division Technique (DIVTEC) à Porrentruy est : Cité des Microtechniques, 2900 Porrentruy.",
+    "keywords": [
+      "adresse",
+      "contact",
+      "porrentruy",
+      "cité des microtechniques",
+      "emplacement"
+    ]
+  },
+  {
+    "id": "event-journee-decouverte-feminin",
+    "title": "Journée découverte des métiers techniques au féminin",
+    "content": "Une journée de découverte des métiers techniques est réservée aux filles de 9e et 10e Harmos. Elle aura lieu le 21 octobre 2025, de 8h15 à 17h15. Les filières présentées sont : informatique, micromécanique, dessin technique, qualité, automation, électronique, horlogerie et chimie.",
+    "keywords": [
+      "événement",
+      "journée découverte",
+      "filles",
+      "féminin",
+      "métiers techniques",
+      "cfc",
+      "harmos"
+    ]
+  },
+  {
+    "id": "event-portes-ouvertes-2025",
+    "title": "Portes ouvertes 2025 à Porrentruy",
+    "content": "Les portes ouvertes de la Division Technique à Porrentruy auront lieu le vendredi 28 novembre 2025 de 13h30 à 19h30 et le samedi 29 novembre 2025 de 10h00 à 16h30.",
+    "keywords": [
+      "événement",
+      "portes ouvertes",
+      "novembre",
+      "visite"
+    ]
+  },
+  {
+    "id": "contact-claude-maitre",
+    "title": "Contact - Claude Maitre",
+    "content": "Claude Maitre est le Directeur de la Division Technique. Son email est claude.maitre@divtec.ch et son téléphone est le +41 (0) 32 420 35 77.",
+    "keywords": [
+      "contact",
+      "directeur",
+      "claude maitre",
+      "direction"
+    ]
+  },
+  {
+    "id": "contact-david-girardin",
+    "title": "Contact - David Girardin",
+    "content": "David Girardin est le Vice-directeur et le Responsable de l'École des Métiers Techniques. Son email est david.girardin@divtec.ch et son téléphone est le +41 (0) 32 420 35 63.",
+    "keywords": [
+      "contact",
+      "vice-directeur",
+      "david girardin",
+      "ecole des métiers",
+      "emt"
+    ]
+  },
+  {
+    "id": "contact-nathalie-meier",
+    "title": "Contact - Nathalie Meier",
+    "content": "Nathalie Meier est la Secrétaire de direction de la Division Technique et la Responsable de l'administration. Son email est nathalie.meier@divtec.ch et son téléphone est le +41 (0) 32 420 35 53.",
+    "keywords": [
+      "contact",
+      "secrétaire",
+      "nathalie meier",
+      "administration",
+      "secrétariat"
+    ]
+  },
+  {
+    "id": "contact-cedric-erard",
+    "title": "Contact - Cédric Erard",
+    "content": "Cédric Erard est membre de la direction et Responsable de l'École Professionnelle Technique. Son email est cedric.erard@divtec.ch et son téléphone est le +41 (0) 32 420 35 46.",
+    "keywords": [
+      "contact",
+      "cédric erard",
+      "ecole professionnelle",
+      "ept",
+      "direction"
+    ]
+  },
+  {
+    "id": "contact-julien-taillard",
+    "title": "Contact - Julien Taillard",
+    "content": "Julien Taillard est membre de la direction et Responsable de la Maturité Professionnelle. Son email est julien.taillard@divtec.ch et son téléphone est le +41 (0) 32 420 35 56.",
+    "keywords": [
+      "contact",
+      "julien taillard",
+      "maturité professionnelle",
+      "mpt",
+      "direction"
+    ]
+  },
+  {
+    "id": "contact-cyril-caillet",
+    "title": "Contact - Cyril Caillet",
+    "content": "Cyril Caillet est membre de la direction et Responsable de l'École Supérieure Technique. Son email est cyril.caillet@divtec.ch et son téléphone est le +41 (0) 32 420 35 56.",
+    "keywords": [
+      "contact",
+      "cyril caillet",
+      "école supérieure",
+      "es",
+      "direction"
+    ]
+  },
+  {
+    "id": "formation-cfc-general",
+    "title": "Formations Initiales (CFC)",
+    "content": "Le **Certificat Fédéral de Capacité (CFC)** se déroule en mode **dual** (école et entreprise). La formation est gratuite, l'apprenti recevant un salaire.",
+    "keywords": [
+      "cfc",
+      "certificat fédéral de capacité",
+      "dual",
+      "apprentissage",
+      "salaire"
+    ]
+  },
+  {
+    "id": "formation-polymecanicien",
+    "title": "Polymécanicien-ne CFC",
+    "content": "- **Description :** Fabrication de pièces, assemblage d'appareils et maintenance de systèmes de production (orientations : fabrication CNC ou montage).\n- **Matières clés :** Techniques de fabrication (tournage, fraisage), Programmation CNC, Dessin technique, Assemblage, Maintenance.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "polymécanicien",
+      "cfc",
+      "cnc",
+      "fabrication",
+      "fraisage",
+      "tournage",
+      "maintenance",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-informaticien",
+    "title": "Informaticien-ne CFC",
+    "content": "- **Description :** Spécialisation en développement d'applications ou en technique des systèmes informatiques.\n- **Matières clés :** Algorithmique, Programmation (Python, C#, Java), Bases de données (SQL), Réseaux (TCP/IP), Systèmes d'exploitation.\n- **Lieu :** Delémont",
+    "keywords": [
+      "informaticien",
+      "cfc",
+      "développement",
+      "systèmes",
+      "programmation",
+      "python",
+      "java",
+      "sql",
+      "réseaux",
+      "delémont"
+    ]
+  },
+  {
+    "id": "formation-micromecanicien",
+    "title": "Micromécanicien-ne CFC",
+    "content": "- **Description :** Production de composants de très petite taille pour des secteurs comme l'horlogerie et le medtech.\n- **Matières clés :** Usinage de haute précision, Étampage, Assemblage de mécanismes horlogers, Contrôle qualité.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "micromécanicien",
+      "cfc",
+      "horlogerie",
+      "medtech",
+      "précision",
+      "étampage",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-dessinateur",
+    "title": "Dessinateur-trice-constructeur-trice industriel-le CFC",
+    "content": "- **Description :** Conception et modélisation 3D de pièces et d'ensembles mécaniques.\n- **Matières clés :** CAO 3D, Dimensionnement, Choix des matériaux, Normes de dessin.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "dessinateur",
+      "constructeur",
+      "industriel",
+      "cfc",
+      "cao",
+      "3d",
+      "conception",
+      "modélisation",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-automaticien",
+    "title": "Automaticien-ne CFC",
+    "content": "- **Description :** Développement et maintenance de systèmes automatisés, commandes et robots industriels.\n- **Matières clés :** Électrotechnique, Schématique, Programmation d'automates (API), Hydraulique, Pneumatique, Robotique.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "automaticien",
+      "cfc",
+      "automate",
+      "api",
+      "robotique",
+      "pneumatique",
+      "hydraulique",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-mpt",
+    "title": "Maturité Professionnelle Technique (MPT)",
+    "content": "- **Description :** La MPT peut être suivie pendant ou après le CFC. Elle donne accès aux **Hautes Écoles Spécialisées (HES)**.\n- **Frais :** Gratuite si suivie en parallèle du CFC.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "mpt",
+      "maturité professionnelle technique",
+      "hes",
+      "hautes écoles",
+      "cfc",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-es-general",
+    "title": "Formations Supérieures (ES)",
+    "content": "Les formations d'**École Supérieure (ES)** s'adressent aux titulaires d'un CFC ou titre équivalent. Elles sont payantes (subventions cantonales possibles).",
+    "keywords": [
+      "es",
+      "école supérieure",
+      "formations supérieures",
+      "cfc",
+      "payant",
+      "subventions"
+    ]
+  },
+  {
+    "id": "formation-es-systemes-industriels",
+    "title": "Technicien-ne ES en Systèmes Industriels",
+    "content": "- **Description :** Gestion, optimisation et maintenance de chaînes de production automatisées (Industrie 4.0).\n- **Modules :** Gestion de projet, Logistique, Automatisation et robotique, Maintenance 4.0, Qualité, Conception (CAO).\n- **Débouchés :** Responsable de production, Chef de projet industrialisation.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "technicien es",
+      "systèmes industriels",
+      "industrie 4.0",
+      "automatisation",
+      "logistique",
+      "maintenance",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "formation-es-informatique-gestion",
+    "title": "Technicien-ne ES en Informatique de gestion",
+    "content": "- **Description :** Analyse des besoins d'entreprise et développement de solutions logicielles sur mesure.\n- **Modules :** Développement orienté objet, Bases de données (SQL/NoSQL), Gestion de projets Agile/Scrum, Analyse d'affaires (UML), ERP, Cybersécurité, Cloud.\n- **Technologies :** C#, .NET, Java, SQL, JavaScript/TypeScript.\n- **Débouchés :** Développeur, Chef de projet IT, Analyste d'affaires.\n- **Lieu :** Delémont",
+    "keywords": [
+      "technicien es",
+      "informatique de gestion",
+      "développeur",
+      "agile",
+      "scrum",
+      "sql",
+      "c#",
+      "delémont"
+    ]
+  },
+  {
+    "id": "formation-es-informatique-industrielle",
+    "title": "Technicien-ne ES en Informatique Industrielle",
+    "content": "- **Description :** Spécialisation à l'intersection de l'informatique et de l'automatique pour piloter des systèmes de production complexes (IIoT, Industrie 4.0).\n- **Modules :** Programmation de systèmes embarqués (C/C++), Réseaux industriels (OPC UA), Supervision (SCADA), Robotique avancée, Vision industrielle.\n- **Débouchés :** Spécialiste en automation, Développeur de systèmes embarqués.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "technicien es",
+      "informatique industrielle",
+      "iiot",
+      "embarqué",
+      "scada",
+      "robotique",
+      "automation",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "ecole-des-metiers-techniques",
+    "title": "Ecole des Métiers Techniques (EMT)",
+    "content": "L'Ecole des Métiers Techniques à Porrentruy propose des formations initiales de type AFP (Attestation Fédérale de Formation Professionnelle) et CFC (Certificat Fédéral de Capacité) en école des métiers.",
+    "keywords": [
+      "emt",
+      "ecole des métiers",
+      "formations",
+      "afp",
+      "cfc",
+      "apprentissage"
+    ]
+  },
+  {
+    "id": "ecole-professionnelle-technique",
+    "title": "Ecole Professionnelle Technique (EPT)",
+    "content": "L'Ecole Professionnelle Technique dispense les cours théoriques pour les formations AFP et CFC, que ce soit en mode dual (entreprise + école) ou en école des métiers.",
+    "keywords": [
+      "ept",
+      "ecole professionnelle",
+      "cours théoriques",
+      "dual",
+      "entreprise"
+    ]
+  },
+  {
+    "id": "maturite-professionnelle-technique-details",
+    "title": "Maturité Professionnelle Technique (MPT)",
+    "content": "La Division Technique propose une formation post-CFC en maturité professionnelle, avec une orientation en Technique, architecture et sciences de la vie (TAV).",
+    "keywords": [
+      "mpt",
+      "maturité professionnelle",
+      "post-cfc",
+      "tav",
+      "technique",
+      "architecture",
+      "sciences de la vie"
+    ]
+  },
+  {
+    "id": "ecole-superieure-technique-details",
+    "title": "Ecole Supérieure Technique (ES)",
+    "content": "L'Ecole Supérieure (ES) de la Division Technique offre des formations supérieures post-CFC qui sont reconnues par la Confédération suisse.",
+    "keywords": [
+      "es",
+      "école supérieure",
+      "formation supérieure",
+      "post-cfc",
+      "technicien es"
+    ]
+  },
+  {
+    "id": "agenda-admission-mpt-delai",
+    "title": "Délai d'inscription à l'examen d'admission MPT",
+    "content": "Le délai d’inscription à l’examen d’admission pour la Maturité Professionnelle Technique est le 22 Mai 2026.",
+    "keywords": [
+      "agenda",
+      "délai",
+      "inscription",
+      "admission",
+      "mpt",
+      "maturité professionnelle"
+    ]
+  },
+  {
+    "id": "agenda-examen-admission-mpt",
+    "title": "Examen d’admission MPT",
+    "content": "L'examen d’admission pour la maturité professionnelle technique, architecture et sciences de la vie aura lieu le 06 Juin 2026.",
+    "keywords": [
+      "agenda",
+      "examen",
+      "admission",
+      "mpt",
+      "maturité professionnelle"
+    ]
+  },
+  {
+    "id": "agenda-inscription-mpt-delai",
+    "title": "Délai d’inscription en MPT 2026-2027",
+    "content": "Le délai d’inscription en MPT pour l'année 2026-2027 est le 19 Juin 2026.",
+    "keywords": [
+      "agenda",
+      "délai",
+      "inscription",
+      "mpt",
+      "maturité professionnelle"
+    ]
+  },
+  {
+    "id": "newtec-mission",
+    "title": "Espace New Tec : Mission et Pôle d'Innovation",
+    "content": "- **Mission :** L'Espace New Tec est le pôle de **transfert de technologies** de la DIVTEC. Il fait le lien entre la formation et les PME industrielles en leur donnant accès à des technologies de pointe et une expertise pour leurs projets d'innovation.\n- **Lieu :** Porrentruy",
+    "keywords": [
+      "newtec",
+      "mission",
+      "innovation",
+      "transfert technologie",
+      "pme",
+      "porrentruy"
+    ]
+  },
+  {
+    "id": "newtec-expertise-additive",
+    "title": "Domaine d'Expertise : Fabrication Additive (Impression 3D)",
+    "content": "- **Objectif :** Prototypage rapide, fabrication d'outillages et de pièces complexes sur mesure.\n- **Technologies :** Impression 3D **métal (SLM)** et **polymère (FDM, SLA)**.\n- **Applications :** Prototypes fonctionnels, outillages spécifiques, pièces pour l'horlogerie ou le medtech.",
+    "keywords": [
+      "fabrication additive",
+      "impression 3d",
+      "prototypage",
+      "slm",
+      "fdm",
+      "sla",
+      "métal",
+      "polymère"
+    ]
+  },
+  {
+    "id": "newtec-expertise-vision",
+    "title": "Domaine d'Expertise : Vision Industrielle & IA",
+    "content": "- **Objectif :** Contrôle qualité à 100% sur les lignes de production.\n- **Technologies :** Caméras 2D/3D, Deep Learning, traitement d'image.\n- **Applications :** Contrôle qualité automatisé, guidage de robots (**Bin Picking**), lecture de marquages (OCR/OCV).",
+    "keywords": [
+      "vision industrielle",
+      "ia",
+      "intelligence artificielle",
+      "contrôle qualité",
+      "deep learning",
+      "bin picking"
+    ]
+  },
+  {
+    "id": "newtec-expertise-robotique",
+    "title": "Domaine d'Expertise : Robotique et Automatisation",
+    "content": "- **Objectif :** Automatiser des tâches de précision et flexibiliser la production.\n- **Technologies :** Robots industriels 6 axes, **robots collaboratifs (cobots)**.\n- **Applications :** Assemblage de micro-composants, tâches \"pick and place\", automatisation de lignes.",
+    "keywords": [
+      "robotique",
+      "automatisation",
+      "cobots",
+      "robots collaboratifs",
+      "pick and place"
+    ]
+  },
+  {
+    "id": "newtec-expertise-iiot",
+    "title": "Domaine d'Expertise : IIoT (Internet Industriel des Objets)",
+    "content": "- **Objectif :** Digitalisation des usines pour le suivi en temps réel et la maintenance prédictive.\n- **Technologies :** Capteurs, connectivité (LoRaWAN, 5G), plateformes cloud.\n- **Applications :** Maintenance prédictive, monitoring de production, optimisation logistique.",
+    "keywords": [
+      "iiot",
+      "internet industriel des objets",
+      "maintenance prédictive",
+      "capteurs",
+      "monitoring"
+    ]
+  },
+  {
+    "id": "newtec-prestations",
+    "title": "Prestations de New Tec pour les Entreprises",
+    "content": "New Tec collabore avec les entreprises pour accélérer leur transformation numérique via :\n- **Preuves de Concept (PoC) :** Validation de la faisabilité technique d'une innovation.\n- **Développement sur mesure :** Création de systèmes automatisés, cellules de contrôle, plateformes de monitoring.\n- **Formations sur mesure :** Ateliers pratiques sur les nouvelles technologies (robotique, impression 3D, etc.).\n- **Veille technologique :** Accompagnement stratégique pour identifier les technologies d'avenir.",
+    "keywords": [
+      "prestations",
+      "services",
+      "entreprises",
+      "poc",
+      "preuve de concept",
+      "développement sur mesure",
+      "formations"
+    ]
+  },
+  {
+    "id": "newtec-projet-ged-qr-code",
+    "title": "Projet d'Apprentissage : GED-QR-CODE",
+    "content": "- **GED-QR-CODE :** Gestion documentaire liée aux machines. Comprend une application web pour gérer utilisateurs, rôles, machines et documents, et une application mobile pour scanner les QR codes et accéder à la documentation.",
+    "keywords": [
+      "ged-qr-code",
+      "gestion documentaire",
+      "qr code",
+      "application mobile",
+      "machines"
+    ]
+  },
+  {
+    "id": "newtec-projet-app-logistique",
+    "title": "Projet d'Apprentissage : App-logistique",
+    "content": "- **App-logistique :** Gestion de stock multi-emplacements avec seuils d’alerte. L'accès est contrôlé par badge et un administrateur peut lancer des inventaires.",
+    "keywords": [
+      "app-logistique",
+      "gestion de stock",
+      "inventaire",
+      "badge",
+      "seuil alerte"
+    ]
+  },
+  {
+    "id": "newtec-projet-maitre-sf",
+    "title": "Projet d'Apprentissage : Maitre_SF",
+    "content": "- **Maitre_SF :** Application centrale qui envoie des ordres aux machines pour exécuter des cycles de production et déposer les produits dans un distributeur.",
+    "keywords": [
+      "maitre_sf",
+      "ordres de fabrication",
+      "cycle de production",
+      "distributeur"
+    ]
+  },
+  {
+    "id": "newtec-projet-flux-donnees",
+    "title": "Projet d'Apprentissage : Flux-de-donnees-dynamique",
+    "content": "- **Flux-de-donnees-dynamique :** Visualisation en temps réel des échanges de données entre les appareils de l'Industrie 4.0, avec un schéma global et des vues détaillées. Voici un exemple de visualisation du flux de données : [CHART:DATA_FLOW]",
+    "keywords": [
+      "flux-de-donnees-dynamique",
+      "visualisation",
+      "temps réel",
+      "recharts",
+      "industrie 4.0"
+    ]
+  },
+  {
+    "id": "newtec-projet-usine-virtuelle",
+    "title": "Projet d'Apprentissage : Usine virtuelle",
+    "content": "- **Usine virtuelle :** Simulation numérique d'une usine Industrie 4.0 avec un cycle complet de fabrication.",
+    "keywords": [
+      "usine virtuelle",
+      "simulation numérique",
+      "jumeau numérique",
+      "fabrication"
+    ]
+  },
+  {
+    "id": "newtec-projet-configurateur-produit",
+    "title": "Projet d'Apprentissage : Configurateur produit",
+    "content": "- **Configurateur produit :** Application web pour configurer un produit personnalisé et générer une commande de production.",
+    "keywords": [
+      "configurateur produit",
+      "personnalisation",
+      "commande",
+      "application web"
+    ]
+  },
+  {
+    "id": "newtec-adresse-porrentruy",
+    "title": "Adresse de NewTec",
+    "content": "NewTec est situé à la Cité des microtechniques, 2900 Porrentruy, au sein de la Division Technique.",
+    "keywords": [
+      "newtec",
+      "adresse",
+      "contact",
+      "porrentruy",
+      "cité des microtechniques"
+    ]
+  },
+  {
+    "id": "newtec-event-jura-2025",
+    "title": "Événement NewTec : Jura 2025",
+    "content": "NewTec organise un événement le 8 septembre 2025 intitulé 'Jura 2025, des grandes tendances d’innovation aux applications concrètes'. Il portera sur la transformation de l'industrie grâce aux technologies de l'Industrie 4.0, avec des conférences, workshops et démonstrations.",
+    "keywords": [
+      "newtec",
+      "événement",
+      "jura 2025",
+      "industrie 4.0",
+      "innovation",
+      "conférences"
+    ]
+  },
+  {
+    "id": "newtec-actu-avancement-projets",
+    "title": "Actualité NewTec : Avancement des projets",
+    "content": "Une actualité de janvier 2025 mentionne des avancées sur les projets de NewTec, notamment le vidage d'une cellule mobile pour étudier un nouveau système de gestion de l'énergie, car l'onduleur actuel est insuffisant.",
+    "keywords": [
+      "newtec",
+      "projets",
+      "cellule mobile",
+      "gestion énergie",
+      "onduleur"
+    ]
+  },
+  {
+    "id": "newtec-soutiens",
+    "title": "Soutiens de NewTec",
+    "content": "NewTec est soutenu financièrement par la Fondation Gebert Ruf et le Fond pour la formation professionnelle de la Confédération suisse. Les soutiens opérationnels et matériels incluent le Switzerland Innovation Park Basel Area, JAG, le Groupe Recomatic et la HE-ARC.",
+    "keywords": [
+      "newtec",
+      "soutiens",
+      "partenaires",
+      "fondation gebert ruf",
+      "sip basel area",
+      "jag",
+      "recomatic",
+      "he-arc"
+    ]
+  }
+]

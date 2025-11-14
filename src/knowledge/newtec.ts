@@ -1,5 +1,4 @@
-// Contient les informations sur l'Espace New Tec, le pôle d'innovation de la DIVTEC.
-import type { KnowledgeChunk } from './index';
+import type { KnowledgeChunk } from '../types';
 
 export const NEWTEC_CHUNKS: KnowledgeChunk[] = [
   {
@@ -73,5 +72,29 @@ export const NEWTEC_CHUNKS: KnowledgeChunk[] = [
     title: "Projet d'Apprentissage : Configurateur produit",
     content: `- **Configurateur produit :** Application web pour configurer un produit personnalisé et générer une commande de production.`,
     keywords: ['configurateur produit', 'personnalisation', 'commande', 'application web'],
+  },
+  {
+    id: 'newtec-adresse-porrentruy',
+    title: 'Adresse de NewTec',
+    content: "NewTec est situé à la Cité des microtechniques, 2900 Porrentruy, au sein de la Division Technique.",
+    keywords: ['newtec', 'adresse', 'contact', 'porrentruy', 'cité des microtechniques'],
+  },
+  {
+    id: 'newtec-event-jura-2025',
+    title: 'Événement NewTec : Jura 2025',
+    content: "NewTec organise un événement le 8 septembre 2025 intitulé 'Jura 2025, des grandes tendances d’innovation aux applications concrètes'. Il portera sur la transformation de l'industrie grâce aux technologies de l'Industrie 4.0, avec des conférences, workshops et démonstrations.",
+    keywords: ['newtec', 'événement', 'jura 2025', 'industrie 4.0', 'innovation', 'conférences'],
+  },
+  {
+    id: 'newtec-actu-avancement-projets',
+    title: 'Actualité NewTec : Avancement des projets',
+    content: "Une actualité de janvier 2025 mentionne des avancées sur les projets de NewTec, notamment le vidage d'une cellule mobile pour étudier un nouveau système de gestion de l'énergie, car l'onduleur actuel est insuffisant.",
+    keywords: ['newtec', 'projets', 'cellule mobile', 'gestion énergie', 'onduleur'],
+  },
+  {
+    id: 'newtec-soutiens',
+    title: 'Soutiens de NewTec',
+    content: "NewTec est soutenu financièrement par la Fondation Gebert Ruf et le Fond pour la formation professionnelle de la Confédération suisse. Les soutiens opérationnels et matériels incluent le Switzerland Innovation Park Basel Area, JAG, le Groupe Recomatic et la HE-ARC.",
+    keywords: ['newtec', 'soutiens', 'partenaires', 'fondation gebert ruf', 'sip basel area', 'jag', 'recomatic', 'he-arc'],
   },
 ];

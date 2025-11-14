@@ -4,20 +4,35 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest",
+    "format-knowledge": "node scripts/format-knowledge.mjs"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.80.0",
     "marked": "^15.0.7",
-    "@google/genai": "^1.19.0",
+    "next": "^14.2.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "recharts": "^2.12.7"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^15.0.0",
     "@types/node": "^22.14.0",
+    "@types/react": "18.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/ui": "^4.0.2",
+    "eslint-config-next": "^14.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0",
+    "jsdom": "24.0.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "typescript-eslint": "^8.46.2",
+    "vitest": "^4.0.2"
   }
 }

@@ -1,5 +1,4 @@
-// Contient les informations sur les formations proposées par la DIVTEC.
-import type { KnowledgeChunk } from './index';
+import type { KnowledgeChunk } from '../types';
 
 export const FORMATIONS_CHUNKS: KnowledgeChunk[] = [
   {
@@ -67,5 +66,47 @@ export const FORMATIONS_CHUNKS: KnowledgeChunk[] = [
     title: 'Technicien-ne ES en Informatique Industrielle',
     content: `- **Description :** Spécialisation à l'intersection de l'informatique et de l'automatique pour piloter des systèmes de production complexes (IIoT, Industrie 4.0).\n- **Modules :** Programmation de systèmes embarqués (C/C++), Réseaux industriels (OPC UA), Supervision (SCADA), Robotique avancée, Vision industrielle.\n- **Débouchés :** Spécialiste en automation, Développeur de systèmes embarqués.\n- **Lieu :** Porrentruy`,
     keywords: ['technicien es', 'informatique industrielle', 'iiot', 'embarqué', 'scada', 'robotique', 'automation', 'porrentruy'],
+  },
+  {
+    id: 'ecole-des-metiers-techniques',
+    title: 'Ecole des Métiers Techniques (EMT)',
+    content: "L'Ecole des Métiers Techniques à Porrentruy propose des formations initiales de type AFP (Attestation Fédérale de Formation Professionnelle) et CFC (Certificat Fédéral de Capacité) en école des métiers.",
+    keywords: ['emt', 'ecole des métiers', 'formations', 'afp', 'cfc', 'apprentissage'],
+  },
+  {
+    id: 'ecole-professionnelle-technique',
+    title: 'Ecole Professionnelle Technique (EPT)',
+    content: "L'Ecole Professionnelle Technique dispense les cours théoriques pour les formations AFP et CFC, que ce soit en mode dual (entreprise + école) ou en école des métiers.",
+    keywords: ['ept', 'ecole professionnelle', 'cours théoriques', 'dual', 'entreprise'],
+  },
+  {
+    id: 'maturite-professionnelle-technique-details',
+    title: 'Maturité Professionnelle Technique (MPT)',
+    content: "La Division Technique propose une formation post-CFC en maturité professionnelle, avec une orientation en Technique, architecture et sciences de la vie (TAV).",
+    keywords: ['mpt', 'maturité professionnelle', 'post-cfc', 'tav', 'technique', 'architecture', 'sciences de la vie'],
+  },
+  {
+    id: 'ecole-superieure-technique-details',
+    title: 'Ecole Supérieure Technique (ES)',
+    content: "L'Ecole Supérieure (ES) de la Division Technique offre des formations supérieures post-CFC qui sont reconnues par la Confédération suisse.",
+    keywords: ['es', 'école supérieure', 'formation supérieure', 'post-cfc', 'technicien es'],
+  },
+  {
+    id: 'agenda-admission-mpt-delai',
+    title: "Délai d'inscription à l'examen d'admission MPT",
+    content: "Le délai d’inscription à l’examen d’admission pour la Maturité Professionnelle Technique est le 22 Mai 2026.",
+    keywords: ['agenda', 'délai', 'inscription', 'admission', 'mpt', 'maturité professionnelle'],
+  },
+  {
+    id: 'agenda-examen-admission-mpt',
+    title: 'Examen d’admission MPT',
+    content: "L'examen d’admission pour la maturité professionnelle technique, architecture et sciences de la vie aura lieu le 06 Juin 2026.",
+    keywords: ['agenda', 'examen', 'admission', 'mpt', 'maturité professionnelle'],
+  },
+  {
+    id: 'agenda-inscription-mpt-delai',
+    title: 'Délai d’inscription en MPT 2026-2027',
+    content: "Le délai d’inscription en MPT pour l'année 2026-2027 est le 19 Juin 2026.",
+    keywords: ['agenda', 'délai', 'inscription', 'mpt', 'maturité professionnelle'],
   },
 ];
